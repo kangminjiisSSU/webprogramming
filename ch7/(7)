@@ -1,0 +1,8 @@
+function plus(a, b)
+{
+    var result = 0;
+    a = a + 1;
+    b = b + 1;
+    result = a + b;
+    console.log('두 수의 합: ' + (a+b));
+}

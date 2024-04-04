@@ -1,0 +1,5 @@
+function nickName()
+{
+    console.log("이예쁜");
+}
+nickName();
