@@ -1,0 +1,28 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <div>
+            <label>아이디</label>
+            <input type="text">
+        </div>
+        </tbody>
+    <table>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $.('.delete').click(function(e){
+                //클래스명이 delete인 엘리먼트를 클릭하면 실행됨
+
+                $.ajax({
+                type : 'post',
+                url : '/delete',
+                data : {_id : '63d0dbc611f14a43e55d6070'}
+            }).done(function(result){
+                //응답에 성공했을 때
+            }).fail(function(xhr, textStatus, console.errorThown){
+                //응답에 실패했을 때
+            });
+        });
+        </script>
+
+

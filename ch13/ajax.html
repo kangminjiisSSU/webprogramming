@@ -1,0 +1,25 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <div>
+            <label>아이디</label>
+            <input type="text">
+        </div>
+        </tbody>
+    <table>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $.ajax({
+                type : 'post',
+                url : '/delete',
+                data : {_id : 'sid'}
+            }).done(function(result){
+                //응답에 성공했을 때
+                item.parent('td').parent('tr').remove();
+            }).fail(function(xhr, textStatus, console.errorThown){
+                //응답에 실패했을 때
+            })
+        </script>
+    </body>
+<html>
